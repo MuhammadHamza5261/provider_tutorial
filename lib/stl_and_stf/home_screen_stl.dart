@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class HomeScreen extends StatelessWidget {
    HomeScreen({Key? key}) : super(key: key);
 
@@ -9,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   // stl are mutable because ya apni state ko change nahi karta
 
    /*
-   jab hum is x ka sath final use kara gan to iski value nahi ho skti
+   jab hum is x ka sath final use kara gan to iski value change nahi ho skti
    otherwise change ho skti ha
     */
 
