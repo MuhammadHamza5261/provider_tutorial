@@ -27,9 +27,6 @@ class _CountScreenState extends State<CountScreen> {
   @override
   Widget build(BuildContext context) {
 
-    final countProvider = Provider.of<CounterProvider>(context,listen: false);
-
-
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -41,8 +38,8 @@ class _CountScreenState extends State<CountScreen> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.green,
           onPressed: (){
-            countProvider.setCount();
-
+            Provider.of<CounterProvider>(context,listen: false).setCount();
+            // context.read<CounterProvider>().setCount() ;
           },
         child: const Icon(Icons.add,color: Colors.white,)
       ),

@@ -31,8 +31,8 @@ class _SliderScreenState extends State<SliderScreen> {
                     max: 1,
                     value: value.value,
                     onChanged: (val){
-                      value.setSliderValue(val);
 
+                      value.setSliderValue(val);
 
                     }
                 ),

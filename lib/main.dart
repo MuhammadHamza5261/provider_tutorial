@@ -2,10 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_provider/provider/count_provider.dart';
 import 'package:flutter_provider/provider/favourite_provider.dart';
 import 'package:flutter_provider/provider/slider_provider.dart';
-import 'package:flutter_provider/screens/count_screen.dart';
-import 'package:flutter_provider/screens/favourite/favourite_screen.dart';
-import 'package:flutter_provider/screens/slider_screen.dart';
+import 'package:flutter_provider/screens/count/count_screen.dart';
 import 'package:provider/provider.dart';
+
 
 
 void main() {
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
         
          child: const MaterialApp(
            debugShowCheckedModeBanner: false,
-           home: FavouriteScreen(),
+           home: CountScreen(),
          ),
     );
   }
