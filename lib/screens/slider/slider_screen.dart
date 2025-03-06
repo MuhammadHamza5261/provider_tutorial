@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_provider/provider/slider_provider.dart';
 import 'package:provider/provider.dart';
+
+
 class SliderScreen extends StatefulWidget {
   const SliderScreen({Key? key}) : super(key: key);
 
@@ -10,14 +12,10 @@ class SliderScreen extends StatefulWidget {
 
 class _SliderScreenState extends State<SliderScreen> {
 
-
-
-
   @override
   Widget build(BuildContext context) {
 
     // final sliderProvider = Provider.of<SliderProvider>(context,listen: false);
-
 
     return Scaffold(
       body: Consumer<SliderProvider>(

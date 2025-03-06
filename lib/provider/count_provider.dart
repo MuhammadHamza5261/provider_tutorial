@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 /*
 change notifier as a a setstate work karta ha or iska context global hota ha
  */
+
 class CounterProvider with ChangeNotifier{
 
   int _count = 0;
@@ -14,6 +15,5 @@ class CounterProvider with ChangeNotifier{
   }
 
 
-
-
 }
+

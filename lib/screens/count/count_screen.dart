@@ -31,7 +31,8 @@ class _CountScreenState extends State<CountScreen> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.green,
-        title: const Text('Count',style: TextStyle(
+        title: const Text('Count',
+          style: TextStyle(
           color: Colors.white
         ),),
       ),

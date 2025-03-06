@@ -16,13 +16,18 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        centerTitle: true,
         title: const Text('Favourite Screen'),
         actions: [
-          GestureDetector(
-            onTap: () {
-              Navigator.push(context, MaterialPageRoute(builder: (context) => const MyFavouriteScreen()));
-            },
-            child: const Icon(Icons.favorite),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const MyFavouriteScreen()));
+              },
+              child: const Icon(Icons.favorite,color: Colors.blue,),
+            ),
           ),
         ],
       ),
@@ -36,11 +41,13 @@ class _FavouriteScreenState extends State<FavouriteScreen> {
                 itemBuilder: (context, index) {
                   return Consumer<FavouriteProvider>(
                     builder: (context, value, child) {
+
                       return ListTile(
                         onTap: () {
                           if (value.selectedItems.contains(index)) {
                             value.removeItem(index);
-                          } else {
+                          }
+                          else {
                             value.addItem(index);
                           }
                         },

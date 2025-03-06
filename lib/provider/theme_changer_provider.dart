@@ -12,6 +12,4 @@ class ThemeChangerProvider  with ChangeNotifier{
      notifyListeners();
   }
 
-
-
 }
