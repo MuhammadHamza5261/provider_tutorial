@@ -46,9 +46,9 @@ class _LoginScreenState extends State<LoginScreen> {
                         onPressed: (){
                           value.login(_emailController.text.toString(), _passwordController.text.toString());
                         },
-                        child: value.isLoading ? CircularProgressIndicator(
+                        child: value.isLoading ? const CircularProgressIndicator(
                           color: Colors.red,
-                        ): Text('Login')
+                        ): const Text('Login')
                     ),
 
                   ],
